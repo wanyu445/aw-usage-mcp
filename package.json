@@ -1,0 +1,21 @@
+{
+  "name": "aw-usage-mcp",
+  "version": "0.1.0",
+  "description": "MCP Server that turns ActivityWatch data into intelligent app usage summaries — session merging, AFK-based blocking, cross-device timeline.",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "bin": {
+    "aw-usage-mcp": "index.js",
+    "aw-usage": "bin/aw-usage.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "sessions": "node bin/aw-usage.js sessions",
+    "summary": "node bin/aw-usage.js summary",
+    "postinstall": "node scripts/download-adb.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
