@@ -33,7 +33,7 @@ Agent 可以使用两个工具：
 ## CLI 使用
 
 ```bash
-
+npm run aw:tasker    启动手机接收端口
 node scripts/usage-sessions                        默认3小时
 node scripts/usage-sessions --phone                只看手机
 node scripts/usage-sessions --computer             只看电脑
